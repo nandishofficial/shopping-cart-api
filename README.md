@@ -32,9 +32,11 @@ Content-Type: application/json
 }
 ```
 
-```curl -i -X POST http://127.0.0.1:8080/cart/items \
+```
+curl -i -X POST http://127.0.0.1:8080/cart/items \
   -H 'Content-Type: application/json' \
-  -d '{"productId":"keyboard-1","quantity":2}```
+  -d '{"productId":"keyboard-1","quantity":2}
+```
 
 First one returns:
 HTTP/1.1 201 CREATED
