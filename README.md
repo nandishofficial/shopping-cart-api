@@ -34,12 +34,12 @@ Content-Type: application/json
 
 ```curl -i -X POST http://127.0.0.1:8080/cart/items \
   -H 'Content-Type: application/json' \
-  -d '{"productId":"keyboard-1","quantity":2}'```
+  -d '{"productId":"keyboard-1","quantity":2}```
 
 First one returns:
 HTTP/1.1 201 CREATED
 Server: Werkzeug/3.1.8 Python/3.13.5
-Date: Tue, 29 Jul 2026 15:59:09 GMT
+Date: Tue, 28 Jul 2026 15:59:09 GMT
 Content-Type: application/json
 Content-Length: 40
 Connection: close
@@ -47,7 +47,7 @@ Connection: close
 Second / Duplicate returns:
 HTTP/1.1 409 CONFLICT
 Server: Werkzeug/3.1.8 Python/3.13.5
-Date: Tue, 29 Jul 2026 15:59:56 GMT
+Date: Tue, 28 Jul 2026 15:59:56 GMT
 Content-Type: application/json
 Content-Length: 43
 Connection: close
